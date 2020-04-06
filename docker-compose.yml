@@ -1,7 +1,6 @@
 registry:
   restart: always
-  image: registry-ext-cert:2
-  entrypoint: /entrypoint.sh
+  image: chrplace/docker-registry-external-cert
   ports:
     - 443:5000
   environment:
